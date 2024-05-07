@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#007354"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="돌아가기" />
+        <Button
+            android:id="@+id/quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hiragana_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="あ\n[ a ]" />
+
+        <Button
+            android:id="@+id/hiragana_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="い\n[ i ]" />
+
+        <Button
+            android:id="@+id/hiragana_u"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="う\n[ u ]" />
+
+        <Button
+            android:id="@+id/hiragana_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="え\n[ e ]" />
+
+        <Button
+            android:id="@+id/hiragana_o"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="お\n[ o ]" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hiragana_ka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="か\n[ka]" />
+
+        <Button
+            android:id="@+id/hiragana_ki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="き\n[ ki ]" />
+
+        <Button
+            android:id="@+id/hiragana_ku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="く\n[ku]" />
+
+        <Button
+            android:id="@+id/hiragana_ke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="け\n[ke]" />
+
+        <Button
+            android:id="@+id/hiragana_ko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="こ\n[ko]" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hiragana_sa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="さ\n[sa]" />
+
+        <Button
+            android:id="@+id/hiragana_shi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="し\n[shi]" />
+
+        <Button
+            android:id="@+id/hiragana_su"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="す\n[su]" />
+
+        <Button
+            android:id="@+id/hiragana_se"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="せ\n[se]" />
+
+        <Button
+            android:id="@+id/hiragana_so"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="そ\n[so]" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hiragana_ta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="た\n[ ta ]" />
+
+        <Button
+            android:id="@+id/hiragana_chi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="ち\n[chi]" />
+
+        <Button
+            android:id="@+id/hiragana_tsu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="つ\n[tsu]" />
+
+        <Button
+            android:id="@+id/hiragana_te"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="て\n[ te ]" />
+
+        <Button
+            android:id="@+id/hiragana_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="と\n[ to ]" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hiragana_na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="な\n[na]" />
+
+        <Button
+            android:id="@+id/hiragana_ni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="に\n[ ni ]" />
+
+        <Button
+            android:id="@+id/hiragana_nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="ぬ\n[nu]" />
+
+        <Button
+            android:id="@+id/hiragana_ne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="ね\n[ne]" />
+
+        <Button
+            android:id="@+id/hiragana_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="の\n[no]" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hiragana_ha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="は\n[ha]" />
+
+        <Button
+            android:id="@+id/hiragana_hi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="ひ\n[ hi ]" />
+
+        <Button
+            android:id="@+id/hiragana_fu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="ふ\n[ fu ]" />
+
+        <Button
+            android:id="@+id/hiragana_he"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="へ\n[he]" />
+
+        <Button
+            android:id="@+id/hiragana_ho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="ほ\n[ho]" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hiragana_ma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="ま\n[ma]" />
+
+        <Button
+            android:id="@+id/hiragana_mi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="み\n[mi]" />
+
+        <Button
+            android:id="@+id/hiragana_mu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="む\n[mu]" />
+
+        <Button
+            android:id="@+id/hiragana_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="め\n[me]" />
+
+        <Button
+            android:id="@+id/hiragana_mo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="も\n[mo]" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hiragana_ya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="や\n[ ya ]" />
+
+        <Button
+            android:id="@+id/hiragana_yu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="ゆ\n[yu]" />
+
+        <Button
+            android:id="@+id/hiragana_yo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="よ\n[yo]" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hiragana_ra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="ら\n[ ra ]" />
+
+        <Button
+            android:id="@+id/hiragana_ri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="り\n[ ri ]" />
+
+        <Button
+            android:id="@+id/hiragana_ru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="る\n[ ru ]" />
+
+        <Button
+            android:id="@+id/hiragana_re"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="れ\n[ re ]" />
+
+        <Button
+            android:id="@+id/hiragana_ro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="ろ\n[ ro ]" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hiragana_wa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="わ\n[wa]" />
+
+        <Button
+            android:id="@+id/hiragana_wo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:gravity="center_horizontal"
+            android:text="を\n[wo]" />
+
+        <Button
+            android:id="@+id/hiragana_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#007354"
+            android:text="ん\n[ n ]" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:padding="20dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:padding="20dp"
+            android:textSize="24sp" />
+    </LinearLayout>
+</LinearLayout>
