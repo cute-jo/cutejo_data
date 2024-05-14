@@ -238,8 +238,8 @@ public class hiragana extends AppCompatActivity {
         });
         hiragana_he.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                textView1.setText("いい [ii] 좋은");
-                textView2.setText("いつ [itsu] 언제");
+                textView1.setText("へた [heta] 잘 못하는");
+                textView2.setText("");
             }
         });
         hiragana_ho.setOnClickListener(new View.OnClickListener(){
@@ -346,4 +346,3 @@ public class hiragana extends AppCompatActivity {
         });
     }
 }
-

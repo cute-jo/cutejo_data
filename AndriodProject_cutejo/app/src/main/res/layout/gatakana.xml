@@ -31,44 +31,44 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/hiragana_a"
+            android:id="@+id/katakana_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="あ\n[ a ]" />
+            android:text="ア\n[ a ]" />
 
         <Button
-            android:id="@+id/hiragana_i"
+            android:id="@+id/katakana_i"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="い\n[ i ]" />
+            android:text="イ\n[ i ]" />
 
         <Button
-            android:id="@+id/hiragana_u"
+            android:id="@+id/katakana_u"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="う\n[ u ]" />
+            android:text="ウ\n[ u ]" />
 
         <Button
-            android:id="@+id/hiragana_e"
+            android:id="@+id/katakana_e"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="え\n[ e ]" />
+            android:text="エ\n[ e ]" />
 
         <Button
-            android:id="@+id/hiragana_o"
+            android:id="@+id/katakana_o"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="お\n[ o ]" />
+            android:text="オ\n[ o ]" />
     </LinearLayout>
 
     <LinearLayout
@@ -77,44 +77,44 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/hiragana_ka"
+            android:id="@+id/katakana_ka"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="か\n[ka]" />
+            android:text="カ\n[ka]" />
 
         <Button
-            android:id="@+id/hiragana_ki"
+            android:id="@+id/katakana_ki"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="き\n[ ki ]" />
+            android:text="キ\n[ ki ]" />
 
         <Button
-            android:id="@+id/hiragana_ku"
+            android:id="@+id/katakana_ku"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="く\n[ku]" />
+            android:text="ク\n[ku]" />
 
         <Button
-            android:id="@+id/hiragana_ke"
+            android:id="@+id/katakana_ke"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="け\n[ke]" />
+            android:text="ケ\n[ke]" />
 
         <Button
-            android:id="@+id/hiragana_ko"
+            android:id="@+id/katakana_ko"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="こ\n[ko]" />
+            android:text="コ\n[ko]" />
     </LinearLayout>
 
     <LinearLayout
@@ -123,44 +123,44 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/hiragana_sa"
+            android:id="@+id/katakana_sa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="さ\n[sa]" />
+            android:text="サ\n[sa]" />
 
         <Button
-            android:id="@+id/hiragana_shi"
+            android:id="@+id/katakana_shi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="し\n[shi]" />
+            android:text="シ\n[shi]" />
 
         <Button
-            android:id="@+id/hiragana_su"
+            android:id="@+id/katakana_su"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="す\n[su]" />
+            android:text="ス\n[su]" />
 
         <Button
-            android:id="@+id/hiragana_se"
+            android:id="@+id/katakana_se"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="せ\n[se]" />
+            android:text="セ\n[se]" />
 
         <Button
-            android:id="@+id/hiragana_so"
+            android:id="@+id/katakana_so"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="そ\n[so]" />
+            android:text="ソ\n[so]" />
     </LinearLayout>
 
     <LinearLayout
@@ -169,44 +169,44 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/hiragana_ta"
+            android:id="@+id/katakana_ta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="た\n[ ta ]" />
+            android:text="タ\n[ ta ]" />
 
         <Button
-            android:id="@+id/hiragana_chi"
+            android:id="@+id/katakana_chi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ち\n[chi]" />
+            android:text="チ\n[chi]" />
 
         <Button
-            android:id="@+id/hiragana_tsu"
+            android:id="@+id/katakana_tsu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="つ\n[tsu]" />
+            android:text="ツ\n[tsu]" />
 
         <Button
-            android:id="@+id/hiragana_te"
+            android:id="@+id/katakana_te"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="て\n[ te ]" />
+            android:text="テ\n[ te ]" />
 
         <Button
-            android:id="@+id/hiragana_to"
+            android:id="@+id/katakana_to"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="と\n[ to ]" />
+            android:text="ト\n[ to ]" />
     </LinearLayout>
 
     <LinearLayout
@@ -215,44 +215,44 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/hiragana_na"
+            android:id="@+id/katakana_na"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="な\n[na]" />
+            android:text="ナ\n[na]" />
 
         <Button
-            android:id="@+id/hiragana_ni"
+            android:id="@+id/katakana_ni"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="に\n[ ni ]" />
+            android:text="ニ\n[ ni ]" />
 
         <Button
-            android:id="@+id/hiragana_nu"
+            android:id="@+id/katakana_nu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ぬ\n[nu]" />
+            android:text="ヌ\n[nu]" />
 
         <Button
-            android:id="@+id/hiragana_ne"
+            android:id="@+id/katakana_ne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ね\n[ne]" />
+            android:text="ネ\n[ne]" />
 
         <Button
-            android:id="@+id/hiragana_no"
+            android:id="@+id/katakana_no"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="の\n[no]" />
+            android:text="ノ\n[no]" />
     </LinearLayout>
 
     <LinearLayout
@@ -261,44 +261,44 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/hiragana_ha"
+            android:id="@+id/katakana_ha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="は\n[ha]" />
+            android:text="ハ\n[ha]" />
 
         <Button
-            android:id="@+id/hiragana_hi"
+            android:id="@+id/katakana_hi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ひ\n[ hi ]" />
+            android:text="ヒ\n[ hi ]" />
 
         <Button
-            android:id="@+id/hiragana_fu"
+            android:id="@+id/katakana_fu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ふ\n[ fu ]" />
+            android:text="フ\n[ fu ]" />
 
         <Button
-            android:id="@+id/hiragana_he"
+            android:id="@+id/katakana_he"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="へ\n[he]" />
+            android:text="ヘ\n[he]" />
 
         <Button
-            android:id="@+id/hiragana_ho"
+            android:id="@+id/katakana_ho"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ほ\n[ho]" />
+            android:text="ホ\n[ho]" />
     </LinearLayout>
 
     <LinearLayout
@@ -307,44 +307,44 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/hiragana_ma"
+            android:id="@+id/katakana_ma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ま\n[ma]" />
+            android:text="マ\n[ma]" />
 
         <Button
-            android:id="@+id/hiragana_mi"
+            android:id="@+id/katakana_mi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="み\n[mi]" />
+            android:text="ミ\n[mi]" />
 
         <Button
-            android:id="@+id/hiragana_mu"
+            android:id="@+id/katakana_mu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="む\n[mu]" />
+            android:text="ム\n[mu]" />
 
         <Button
-            android:id="@+id/hiragana_me"
+            android:id="@+id/katakana_me"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="め\n[me]" />
+            android:text="メ\n[me]" />
 
         <Button
-            android:id="@+id/hiragana_mo"
+            android:id="@+id/katakana_mo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="も\n[mo]" />
+            android:text="モ\n[mo]" />
     </LinearLayout>
 
     <LinearLayout
@@ -353,28 +353,28 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/hiragana_ya"
+            android:id="@+id/katakana_ya"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="や\n[ ya ]" />
+            android:text="ヤ\n[ ya ]" />
 
         <Button
-            android:id="@+id/hiragana_yu"
+            android:id="@+id/katakana_yu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ゆ\n[yu]" />
+            android:text="ユ\n[yu]" />
 
         <Button
-            android:id="@+id/hiragana_yo"
+            android:id="@+id/katakana_yo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="よ\n[yo]" />
+            android:text="ヨ\n[yo]" />
     </LinearLayout>
 
     <LinearLayout
@@ -383,44 +383,44 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/hiragana_ra"
+            android:id="@+id/katakana_ra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ら\n[ ra ]" />
+            android:text="ラ\n[ ra ]" />
 
         <Button
-            android:id="@+id/hiragana_ri"
+            android:id="@+id/katakana_ri"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="り\n[ ri ]" />
+            android:text="リ\n[ ri ]" />
 
         <Button
-            android:id="@+id/hiragana_ru"
+            android:id="@+id/katakana_ru"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="る\n[ ru ]" />
+            android:text="ル\n[ ru ]" />
 
         <Button
-            android:id="@+id/hiragana_re"
+            android:id="@+id/katakana_re"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="れ\n[ re ]" />
+            android:text="レ\n[ re ]" />
 
         <Button
-            android:id="@+id/hiragana_ro"
+            android:id="@+id/katakana_ro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ろ\n[ ro ]" />
+            android:text="ロ\n[ ro ]" />
     </LinearLayout>
 
     <LinearLayout
@@ -429,29 +429,29 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/hiragana_wa"
+            android:id="@+id/katakana_wa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="わ\n[wa]" />
+            android:text="ワ\n[wa]" />
 
         <Button
-            android:id="@+id/hiragana_wo"
+            android:id="@+id/katakana_wo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
             android:gravity="center_horizontal"
-            android:text="を\n[wo]" />
+            android:text="ヲ\n[wo]" />
 
         <Button
-            android:id="@+id/hiragana_n"
+            android:id="@+id/katakana_n"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ん\n[ n ]" />
+            android:text="ン\n[ n ]" />
     </LinearLayout>
 
     <LinearLayout
