@@ -14,10 +14,6 @@ public class hiragana extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hiragana);
-//
-//        getSupportActionBar().setTitle("activity");
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
         TextView textView1 = findViewById(R.id.textView1);
         TextView textView2 = findViewById(R.id.textView2);
@@ -67,6 +63,17 @@ public class hiragana extends AppCompatActivity {
         Button hiragana_wa = findViewById(R.id.hiragana_wa);
         Button hiragana_wo = findViewById(R.id.hiragana_wo);
         Button hiragana_n = findViewById(R.id.hiragana_n);
+
+        // 히라가나 버튼 클릭 시
+        Button back = (Button) findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         hiragana_a.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){

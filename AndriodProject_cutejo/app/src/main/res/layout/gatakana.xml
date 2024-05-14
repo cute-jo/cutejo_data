@@ -17,6 +17,7 @@
             android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="moveButton"
             android:text="돌아가기" />
         <Button
             android:id="@+id/quiz"
@@ -465,7 +466,7 @@
             android:layout_height="match_parent"
             android:text=""
             android:padding="20dp"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -473,6 +474,6 @@
             android:layout_height="match_parent"
             android:text=""
             android:padding="20dp"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
     </LinearLayout>
 </LinearLayout>

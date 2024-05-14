@@ -64,6 +64,16 @@ public class gatakana extends AppCompatActivity {
         Button katakana_wo = findViewById(R.id.katakana_wo);
         Button katakana_n = findViewById(R.id.katakana_n);
 
+        Button back = (Button) findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
         katakana_a.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 textView1.setText("アメ [ame] 비");
