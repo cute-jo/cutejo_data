@@ -15,6 +15,16 @@ public class gatakana extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gatakana);
 
+        // 퀴즈 버튼 클릭시
+        Button quiz2 = (Button) findViewById(R.id.quiz2);
+        quiz2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), Quiz2.class);
+                startActivity(intent);
+            }
+        });
+
         TextView textView1 = findViewById(R.id.textView1);
         TextView textView2 = findViewById(R.id.textView2);
         Button katakana_a = findViewById(R.id.katakana_a);

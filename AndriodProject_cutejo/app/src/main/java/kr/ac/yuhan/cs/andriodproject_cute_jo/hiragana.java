@@ -14,6 +14,15 @@ public class hiragana extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hiragana);
+        // 퀴즈 버튼 클릭시
+        Button quiz1 = (Button) findViewById(R.id.quiz1);
+        quiz1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), Quiz1.class);
+                startActivity(intent);
+            }
+        });
 
         TextView textView1 = findViewById(R.id.textView1);
         TextView textView2 = findViewById(R.id.textView2);
@@ -64,7 +73,7 @@ public class hiragana extends AppCompatActivity {
         Button hiragana_wo = findViewById(R.id.hiragana_wo);
         Button hiragana_n = findViewById(R.id.hiragana_n);
 
-        // 히라가나 버튼 클릭 시
+        // 돌아가기 버튼 클릭 시
         Button back = (Button) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener(){
 
