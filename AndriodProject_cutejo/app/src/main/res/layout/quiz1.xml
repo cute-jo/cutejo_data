@@ -6,15 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="돌아가기" />
+
     <TextView
         android:id="@+id/question"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="246dp"
+        android:layout_marginBottom="80dp"
         android:gravity="center"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="-1dp"
-        android:layout_marginBottom="80dp" />
+        tools:layout_editor_absoluteY="-1dp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +28,7 @@
         android:weightSum="2"
         android:layout_marginBottom="10dp">
 
-        <Button
+        <android.widget.Button
             android:id="@+id/answer1"
             android:layout_width="match_parent"
             android:layout_height="170dp"
@@ -33,7 +39,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"/>
 
-        <Button
+        <android.widget.Button
             android:id="@+id/answer2"
             android:layout_width="match_parent"
             android:layout_height="170dp"
@@ -50,7 +56,7 @@
         android:orientation="horizontal"
         android:weightSum="2">
 
-        <Button
+        <android.widget.Button
             android:id="@+id/answer3"
             android:layout_width="match_parent"
             android:layout_height="170dp"
@@ -61,7 +67,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"/>
 
-        <Button
+        <android.widget.Button
             android:id="@+id/answer4"
             android:layout_width="match_parent"
             android:layout_height="170dp"
