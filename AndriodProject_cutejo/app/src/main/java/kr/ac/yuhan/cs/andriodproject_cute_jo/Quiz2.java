@@ -1,5 +1,6 @@
 package kr.ac.yuhan.cs.andriodproject_cute_jo;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -7,56 +8,61 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
 
 public class Quiz2 extends AppCompatActivity {
 
-    private TextView questionTextView;
+    private TextView question;
     private Button answer1Button, answer2Button, answer3Button, answer4Button;
-
-    private String[] questions = {
-            "Question 1?",
-            "Question 2?",
-            "Question 3?",
-            "Question 4?",
-            "Question 5?",
-            "Question 6?",
-            "Question 7?",
-            "Question 8?",
-            "Question 9?",
-            "Question 10?"
-    };
-
-    private String[][] answers = {
-            {"Answer 1", "Answer 2", "Answer 3", "Answer 4"},
-            {"Answer 1", "Answer 2", "Answer 3", "Answer 4"},
-            {"Answer 1", "Answer 2", "Answer 3", "Answer 4"},
-            {"Answer 1", "Answer 2", "Answer 3", "Answer 4"},
-            {"Answer 1", "Answer 2", "Answer 3", "Answer 4"},
-            {"Answer 1", "Answer 2", "Answer 3", "Answer 4"},
-            {"Answer 1", "Answer 2", "Answer 3", "Answer 4"},
-            {"Answer 1", "Answer 2", "Answer 3", "Answer 4"},
-            {"Answer 1", "Answer 2", "Answer 3", "Answer 4"},
-            {"Answer 1", "Answer 2", "Answer 3", "Answer 4"}
-    };
-
-    // 모든 정답을 1번(첫 번째 선택지)으로 설정
-    private int[] correctAnswers = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    private String[] questions;
+    private String[] answers;
+    private Random random;
 
     private int currentQuestionIndex = 0;
+    private int correctAnswerIndex = 0;
+    private int correctCount = 0; // 맞힌 문제 수
+    private int currentQuizCount = 0; // 현재 진행 중인 퀴즈 횟수
+    private static final int TOTAL_QUIZZES = 10; // 퀴즈 횟수
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz1);
+// 돌아가기 버튼 클릭 시
+        Button back = (Button) findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener(){
 
-        questionTextView = findViewById(R.id.question);
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        question = findViewById(R.id.question);
         answer1Button = findViewById(R.id.answer1);
         answer2Button = findViewById(R.id.answer2);
         answer3Button = findViewById(R.id.answer3);
         answer4Button = findViewById(R.id.answer4);
 
+        random = new Random();
+        questions = new String[]{"ア", "イ", "ウ", "エ", "オ",
+                "カ", "キ", "ク", "ケ", "コ", "サ", "シ", "ス", "セ", "ソ",
+                "タ", "チ", "ツ", "テ", "ト", "ナ", "ニ", "ヌ", "ネ", "ノ",
+                "ハ", "ヒ", "フ", "ヘ", "ホ", "マ", "ミ", "ム", "メ", "モ",
+                "ヤ", "ユ", "ヨ", "ラ", "リ", "ル", "レ", "ロ", "ワ", "ヲ", "ン"};
+
+        answers = new String[]{"a", "i", "u", "e", "o",
+                "ka", "ki", "ku", "ke", "ko", "sa", "shi", "su", "se", "so",
+                "ta", "chi", "tsu", "te", "to", "na", "ni", "nu", "ne", "no",
+                "ha", "hi", "fu", "he", "ho", "ma", "mi", "mu", "me", "mo",
+                "ya", "yu", "yo", "ra", "ri", "ru", "re", "ro", "wa", "wo", "n"};
         loadQuestion();
 
         View.OnClickListener answerButtonClickListener = new View.OnClickListener() {
@@ -73,20 +79,40 @@ public class Quiz2 extends AppCompatActivity {
     }
 
     private void loadQuestion() {
-        questionTextView.setText(questions[currentQuestionIndex]);
-        answer1Button.setText(answers[currentQuestionIndex][0]);
-        answer2Button.setText(answers[currentQuestionIndex][1]);
-        answer3Button.setText(answers[currentQuestionIndex][2]);
-        answer4Button.setText(answers[currentQuestionIndex][3]);
+        currentQuizCount++;
+        if (currentQuizCount > TOTAL_QUIZZES) {
+            endQuiz();
+            return;
+        }
+
+        currentQuestionIndex = random.nextInt(questions.length);
+        question.setText(questions[currentQuestionIndex]);
+
+        List<String> options = new ArrayList<>();
+        options.add(answers[currentQuestionIndex]);
+        while (options.size() < 4) {
+            int wrongAnswerIndex = random.nextInt(answers.length);
+            if (wrongAnswerIndex != currentQuestionIndex && !options.contains(answers[wrongAnswerIndex])) {
+                options.add(answers[wrongAnswerIndex]);
+            }
+        }
+        Collections.shuffle(options);
+
+        answer1Button.setText(options.get(0));
+        answer2Button.setText(options.get(1));
+        answer3Button.setText(options.get(2));
+        answer4Button.setText(options.get(3));
+
+        correctAnswerIndex = options.indexOf(answers[currentQuestionIndex]);
 
         resetButtonColors();
     }
 
     private void resetButtonColors() {
-        answer1Button.setBackgroundColor(Color.parseColor("#00ffffff"));
-        answer2Button.setBackgroundColor(Color.parseColor("#00ffffff"));
-        answer3Button.setBackgroundColor(Color.parseColor("#00ffffff"));
-        answer4Button.setBackgroundColor(Color.parseColor("#00ffffff"));
+        answer1Button.setBackgroundColor(Color.WHITE);
+        answer2Button.setBackgroundColor(Color.WHITE);
+        answer3Button.setBackgroundColor(Color.WHITE);
+        answer4Button.setBackgroundColor(Color.WHITE);
     }
 
     private void checkAnswer(View v) {
@@ -101,29 +127,39 @@ public class Quiz2 extends AppCompatActivity {
             selectedAnswerIndex = 3;
         }
 
-        if (selectedAnswerIndex == correctAnswers[currentQuestionIndex]) {
+        if (selectedAnswerIndex == correctAnswerIndex) {
             v.setBackgroundColor(Color.GREEN);
+            correctCount++;
             Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
         } else {
             v.setBackgroundColor(Color.RED);
             Toast.makeText(this, "Incorrect!", Toast.LENGTH_SHORT).show();
-            // Highlight the correct answer
-            answer1Button.setBackgroundColor(Color.GREEN);
+            if (correctAnswerIndex == 0) answer1Button.setBackgroundColor(Color.GREEN);
+            else if (correctAnswerIndex == 1) answer2Button.setBackgroundColor(Color.GREEN);
+            else if (correctAnswerIndex == 2) answer3Button.setBackgroundColor(Color.GREEN);
+            else if (correctAnswerIndex == 3) answer4Button.setBackgroundColor(Color.GREEN);
         }
 
-        currentQuestionIndex++;
-        if (currentQuestionIndex < questions.length) {
-            // Delay before loading the next question
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    loadQuestion();
-                }
-            }, 1000);  // 1 second delay
-        } else {
-            Toast.makeText(this, "Quiz Finished!", Toast.LENGTH_LONG).show();
-            disableButtons();
-        }
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                loadQuestion();
+            }
+        }, 1000);
+    }
+
+    private void endQuiz() {
+        Toast.makeText(this, "Quiz Finished! You got " + correctCount + " out of " + TOTAL_QUIZZES + " correct.", Toast.LENGTH_LONG).show();
+        disableButtons();
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(Quiz2.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }, 3000); // 3초 후 메인 화면으로 이동
     }
 
     private void disableButtons() {
