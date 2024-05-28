@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".hiragana"/>
         <activity android:name=".Quiz1"></activity>
+        <activity android:name=".Quiz2"></activity>
         <activity android:name=".gatakana"/>
     </application>
 
