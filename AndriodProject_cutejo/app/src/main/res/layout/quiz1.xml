@@ -37,7 +37,8 @@
             tools:layout_editor_absoluteY="358dp"
             android:background="@drawable/quiz_btn"
             android:layout_marginLeft="5dp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"/>
 
         <android.widget.Button
             android:id="@+id/answer2"
@@ -47,7 +48,8 @@
             tools:layout_editor_absoluteX="208dp"
             tools:layout_editor_absoluteY="540dp"
             android:background="@drawable/quiz_btn"
-            android:layout_marginRight="5dp"/>
+            android:layout_marginRight="5dp"
+            android:textColor="@color/black"/>
     </LinearLayout>
 
     <LinearLayout
@@ -65,7 +67,8 @@
             tools:layout_editor_absoluteY="358dp"
             android:background="@drawable/quiz_btn"
             android:layout_marginLeft="5dp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"/>
 
         <android.widget.Button
             android:id="@+id/answer4"
@@ -75,6 +78,7 @@
             tools:layout_editor_absoluteX="208dp"
             tools:layout_editor_absoluteY="540dp"
             android:background="@drawable/quiz_btn"
-            android:layout_marginRight="5dp"/>
+            android:layout_marginRight="5dp"
+            android:textColor="@color/black"/>
     </LinearLayout>
 </LinearLayout>

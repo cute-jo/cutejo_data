@@ -22,9 +22,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".hiragana"/>
-        <activity android:name=".Quiz1"></activity>
-        <activity android:name=".Quiz2"></activity>
+        <activity android:name=".Quiz1"/>
+        <activity android:name=".Quiz2"/>
         <activity android:name=".gatakana"/>
+        <activity android:name=".Quiz1Result"/>
+        <activity android:name=".Quiz2Result"/>
     </application>
 
 </manifest>

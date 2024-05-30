@@ -30,10 +30,13 @@ public class Quiz2 extends AppCompatActivity {
     private int currentQuizCount = 0; // 현재 진행 중인 퀴즈 횟수
     private static final int TOTAL_QUIZZES = 10; // 퀴즈 횟수
 
+    // 퀴즈 질문과 답변을 저장할 리스트
+    private List<String> quizQuestions;
+    private List<String> userAnswers;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quiz1);
+        setContentView(R.layout.quiz2);
 // 돌아가기 버튼 클릭 시
         Button back = (Button) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener(){
@@ -63,6 +66,9 @@ public class Quiz2 extends AppCompatActivity {
                 "ta", "chi", "tsu", "te", "to", "na", "ni", "nu", "ne", "no",
                 "ha", "hi", "fu", "he", "ho", "ma", "mi", "mu", "me", "mo",
                 "ya", "yu", "yo", "ra", "ri", "ru", "re", "ro", "wa", "wo", "n"};
+        // 리스트 초기화
+        quizQuestions = new ArrayList<>();
+        userAnswers = new ArrayList<>();
         loadQuestion();
 
         View.OnClickListener answerButtonClickListener = new View.OnClickListener() {
@@ -127,6 +133,17 @@ public class Quiz2 extends AppCompatActivity {
             selectedAnswerIndex = 3;
         }
 
+        // 사용자 답변 저장
+        String userAnswer = "";
+        switch (selectedAnswerIndex) {
+            case 0: userAnswer = answer1Button.getText().toString(); break;
+            case 1: userAnswer = answer2Button.getText().toString(); break;
+            case 2: userAnswer = answer3Button.getText().toString(); break;
+            case 3: userAnswer = answer4Button.getText().toString(); break;
+        }
+        quizQuestions.add(questions[currentQuestionIndex] + " -> " + answers[currentQuestionIndex]);
+        userAnswers.add(userAnswer);
+
         if (selectedAnswerIndex == correctAnswerIndex) {
             v.setBackgroundColor(Color.GREEN);
             correctCount++;
@@ -149,17 +166,14 @@ public class Quiz2 extends AppCompatActivity {
     }
 
     private void endQuiz() {
-        Toast.makeText(this, "Quiz Finished! You got " + correctCount + " out of " + TOTAL_QUIZZES + " correct.", Toast.LENGTH_LONG).show();
-        disableButtons();
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(Quiz2.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        }, 3000); // 3초 후 메인 화면으로 이동
+        // 퀴즈 결과 저장
+        Intent intent = new Intent(Quiz2.this, Quiz2Result.class);
+        intent.putExtra("correctCount", correctCount);
+        intent.putExtra("totalQuizzes", TOTAL_QUIZZES);
+        intent.putStringArrayListExtra("quizQuestions", (ArrayList<String>) quizQuestions);
+        intent.putStringArrayListExtra("userAnswers", (ArrayList<String>) userAnswers);
+        startActivity(intent);
+        finish();
     }
 
     private void disableButtons() {
