@@ -38,7 +38,8 @@
             android:background="@drawable/quiz_btn"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="22sp"/>
 
         <android.widget.Button
             android:id="@+id/answer2"
@@ -49,7 +50,8 @@
             tools:layout_editor_absoluteY="540dp"
             android:background="@drawable/quiz_btn"
             android:layout_marginRight="5dp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="22sp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -68,7 +70,8 @@
             android:background="@drawable/quiz_btn"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="22sp"/>
 
         <android.widget.Button
             android:id="@+id/answer4"
@@ -79,6 +82,7 @@
             tools:layout_editor_absoluteY="540dp"
             android:background="@drawable/quiz_btn"
             android:layout_marginRight="5dp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="22sp"/>
     </LinearLayout>
 </LinearLayout>
