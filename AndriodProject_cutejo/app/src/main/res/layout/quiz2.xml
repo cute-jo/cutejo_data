@@ -38,6 +38,7 @@
             android:background="@drawable/quiz_btn"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
+            android:textColor="@color/black"
             android:textSize="22sp"/>
 
         <android.widget.Button
@@ -49,6 +50,7 @@
             tools:layout_editor_absoluteY="540dp"
             android:background="@drawable/quiz_btn"
             android:layout_marginRight="5dp"
+            android:textColor="@color/black"
             android:textSize="22sp"/>
     </LinearLayout>
 
@@ -68,6 +70,7 @@
             android:background="@drawable/quiz_btn"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
+            android:textColor="@color/black"
             android:textSize="22sp"/>
 
         <android.widget.Button
@@ -79,6 +82,7 @@
             tools:layout_editor_absoluteY="540dp"
             android:background="@drawable/quiz_btn"
             android:layout_marginRight="5dp"
+            android:textColor="@color/black"
             android:textSize="22sp"/>
     </LinearLayout>
 </LinearLayout>

@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="351dp"
+            android:layout_width="325dp"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
