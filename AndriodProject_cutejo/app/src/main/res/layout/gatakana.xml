@@ -8,17 +8,25 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+     <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="91dp"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="moveButton"
-            android:text="돌아가기" />
+        <LinearLayout
+            android:layout_width="325dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="moveButton"
+                android:text="돌아가기" />
+
+        </LinearLayout>
+
         <Button
             android:id="@+id/quiz2"
             android:layout_width="wrap_content"
@@ -37,7 +45,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ア\n[ a ]" />
+            android:text="ア\n[ a ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_i"
@@ -45,7 +54,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="イ\n[ i ]" />
+            android:text="イ\n[ i ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_u"
@@ -53,7 +63,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ウ\n[ u ]" />
+            android:text="ウ\n[ u ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_e"
@@ -61,7 +72,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="エ\n[ e ]" />
+            android:text="エ\n[ e ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_o"
@@ -69,7 +81,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="オ\n[ o ]" />
+            android:text="オ\n[ o ]"
+            android:textSize="7pt" />
     </LinearLayout>
 
     <LinearLayout
@@ -83,7 +96,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="カ\n[ka]" />
+            android:text="カ\n[ka]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_ki"
@@ -91,7 +105,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="キ\n[ ki ]" />
+            android:text="キ\n[ ki ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_ku"
@@ -99,7 +114,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ク\n[ku]" />
+            android:text="ク\n[ku]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_ke"
@@ -107,7 +123,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ケ\n[ke]" />
+            android:text="ケ\n[ke]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_ko"
@@ -115,7 +132,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="コ\n[ko]" />
+            android:text="コ\n[ko]"
+            android:textSize="7pt" />
     </LinearLayout>
 
     <LinearLayout
@@ -129,7 +147,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="サ\n[sa]" />
+            android:text="サ\n[sa]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_shi"
@@ -137,7 +156,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="シ\n[shi]" />
+            android:text="シ\n[shi]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_su"
@@ -145,7 +165,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ス\n[su]" />
+            android:text="ス\n[su]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_se"
@@ -153,7 +174,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="セ\n[se]" />
+            android:text="セ\n[se]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_so"
@@ -161,7 +183,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ソ\n[so]" />
+            android:text="ソ\n[so]"
+            android:textSize="7pt" />
     </LinearLayout>
 
     <LinearLayout
@@ -175,7 +198,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="タ\n[ ta ]" />
+            android:text="タ\n[ ta ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_chi"
@@ -183,7 +207,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="チ\n[chi]" />
+            android:text="チ\n[chi]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_tsu"
@@ -191,7 +216,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ツ\n[tsu]" />
+            android:text="ツ\n[tsu]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_te"
@@ -199,7 +225,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="テ\n[ te ]" />
+            android:text="テ\n[ te ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_to"
@@ -207,7 +234,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ト\n[ to ]" />
+            android:text="ト\n[ to ]"
+            android:textSize="7pt" />
     </LinearLayout>
 
     <LinearLayout
@@ -221,7 +249,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ナ\n[na]" />
+            android:text="ナ\n[na]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_ni"
@@ -229,7 +258,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ニ\n[ ni ]" />
+            android:text="ニ\n[ ni ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_nu"
@@ -237,7 +267,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ヌ\n[nu]" />
+            android:text="ヌ\n[nu]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_ne"
@@ -245,7 +276,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ネ\n[ne]" />
+            android:text="ネ\n[ne]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_no"
@@ -253,7 +285,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ノ\n[no]" />
+            android:text="ノ\n[no]"
+            android:textSize="7pt" />
     </LinearLayout>
 
     <LinearLayout
@@ -267,7 +300,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ハ\n[ha]" />
+            android:text="ハ\n[ha]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_hi"
@@ -275,7 +309,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ヒ\n[ hi ]" />
+            android:text="ヒ\n[ hi ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_fu"
@@ -283,7 +318,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="フ\n[ fu ]" />
+            android:text="フ\n[ fu ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_he"
@@ -291,7 +327,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ヘ\n[he]" />
+            android:text="ヘ\n[he]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_ho"
@@ -299,7 +336,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ホ\n[ho]" />
+            android:text="ホ\n[ho]"
+            android:textSize="7pt" />
     </LinearLayout>
 
     <LinearLayout
@@ -313,7 +351,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="マ\n[ma]" />
+            android:text="マ\n[ma]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_mi"
@@ -321,7 +360,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ミ\n[mi]" />
+            android:text="ミ\n[mi]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_mu"
@@ -329,7 +369,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ム\n[mu]" />
+            android:text="ム\n[mu]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_me"
@@ -337,7 +378,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="メ\n[me]" />
+            android:text="メ\n[me]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_mo"
@@ -345,7 +387,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="モ\n[mo]" />
+            android:text="モ\n[mo]"
+            android:textSize="7pt" />
     </LinearLayout>
 
     <LinearLayout
@@ -359,7 +402,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ヤ\n[ ya ]" />
+            android:text="ヤ\n[ ya ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_yu"
@@ -367,7 +411,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ユ\n[yu]" />
+            android:text="ユ\n[yu]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_yo"
@@ -375,7 +420,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ヨ\n[yo]" />
+            android:text="ヨ\n[yo]"
+            android:textSize="7pt" />
     </LinearLayout>
 
     <LinearLayout
@@ -389,7 +435,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ラ\n[ ra ]" />
+            android:text="ラ\n[ ra ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_ri"
@@ -397,7 +444,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="リ\n[ ri ]" />
+            android:text="リ\n[ ri ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_ru"
@@ -405,7 +453,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ル\n[ ru ]" />
+            android:text="ル\n[ ru ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_re"
@@ -413,7 +462,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="レ\n[ re ]" />
+            android:text="レ\n[ re ]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_ro"
@@ -421,7 +471,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ロ\n[ ro ]" />
+            android:text="ロ\n[ ro ]"
+            android:textSize="7pt" />
     </LinearLayout>
 
     <LinearLayout
@@ -435,7 +486,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ワ\n[wa]" />
+            android:text="ワ\n[wa]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_wo"
@@ -444,7 +496,8 @@
             android:layout_weight="1"
             android:backgroundTint="#007354"
             android:gravity="center_horizontal"
-            android:text="ヲ\n[wo]" />
+            android:text="ヲ\n[wo]"
+            android:textSize="7pt" />
 
         <Button
             android:id="@+id/katakana_n"
@@ -452,7 +505,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#007354"
-            android:text="ン\n[ n ]" />
+            android:text="ン\n[ n ]"
+            android:textSize="7pt" />
     </LinearLayout>
 
     <LinearLayout

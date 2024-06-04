@@ -350,13 +350,13 @@ public class gatakana extends AppCompatActivity {
         });
         katakana_wo.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                textView1.setText("");
+                textView1.setText("ヲタク [otaku] 서브 컬처 마니아");
                 textView2.setText("");
             }
         });
         katakana_n.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                textView1.setText("");
+                textView1.setText("ソウジキ [soujiki] 청소기");
                 textView2.setText("");
             }
         });
